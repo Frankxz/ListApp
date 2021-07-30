@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		C630F12D26B42CC000790F78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630F12C26B42CC000790F78 /* AppDelegate.swift */; };
 		C630F12F26B42CC000790F78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630F12E26B42CC000790F78 /* SceneDelegate.swift */; };
-		C630F13126B42CC000790F78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630F13026B42CC000790F78 /* ViewController.swift */; };
+		C630F13126B42CC000790F78 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630F13026B42CC000790F78 /* TabBarController.swift */; };
 		C630F13426B42CC000790F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C630F13226B42CC000790F78 /* Main.storyboard */; };
 		C630F13626B42CC100790F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C630F13526B42CC100790F78 /* Assets.xcassets */; };
 		C630F13926B42CC100790F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C630F13726B42CC100790F78 /* LaunchScreen.storyboard */; };
+		C630F14126B42CDE00790F78 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630F14026B42CDE00790F78 /* Person.swift */; };
+		C630F14326B42E9B00790F78 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630F14226B42E9B00790F78 /* DataManager.swift */; };
+		C630F14526B4345300790F78 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630F14426B4345300790F78 /* PersonListViewController.swift */; };
+		C630F14726B434F100790F78 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630F14626B434F100790F78 /* ContactListViewController.swift */; };
+		C630F14E26B44D3000790F78 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630F14D26B44D3000790F78 /* PersonInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C630F12926B42CC000790F78 /* ListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C630F12C26B42CC000790F78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C630F12E26B42CC000790F78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C630F13026B42CC000790F78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C630F13026B42CC000790F78 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C630F13326B42CC000790F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C630F13526B42CC100790F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C630F13826B42CC100790F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C630F13A26B42CC100790F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C630F14026B42CDE00790F78 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C630F14226B42E9B00790F78 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C630F14426B4345300790F78 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		C630F14626B434F100790F78 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		C630F14D26B44D3000790F78 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonInfoViewController.swift; path = ListApp/ViewControllers/PersonInfoViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		C630F12B26B42CC000790F78 /* ListApp */ = {
 			isa = PBXGroup;
 			children = (
-				C630F12C26B42CC000790F78 /* AppDelegate.swift */,
-				C630F12E26B42CC000790F78 /* SceneDelegate.swift */,
-				C630F13026B42CC000790F78 /* ViewController.swift */,
-				C630F13226B42CC000790F78 /* Main.storyboard */,
-				C630F13526B42CC100790F78 /* Assets.xcassets */,
-				C630F13726B42CC100790F78 /* LaunchScreen.storyboard */,
-				C630F13A26B42CC100790F78 /* Info.plist */,
+				C630F14926B4361F00790F78 /* Model */,
+				C630F14A26B4363000790F78 /* Storyboards */,
+				C630F14826B4361000790F78 /* ViewControllers */,
+				C630F14B26B4364C00790F78 /* SupportFiles */,
+				C630F14C26B4365B00790F78 /* Resourses */,
 			);
 			path = ListApp;
+			sourceTree = "<group>";
+		};
+		C630F14826B4361000790F78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C630F14D26B44D3000790F78 /* PersonInfoViewController.swift */,
+				C630F13026B42CC000790F78 /* TabBarController.swift */,
+				C630F14426B4345300790F78 /* PersonListViewController.swift */,
+				C630F14626B434F100790F78 /* ContactListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C630F14926B4361F00790F78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C630F14026B42CDE00790F78 /* Person.swift */,
+				C630F14226B42E9B00790F78 /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C630F14A26B4363000790F78 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C630F13226B42CC000790F78 /* Main.storyboard */,
+				C630F13726B42CC100790F78 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C630F14B26B4364C00790F78 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C630F12C26B42CC000790F78 /* AppDelegate.swift */,
+				C630F12E26B42CC000790F78 /* SceneDelegate.swift */,
+				C630F13A26B42CC100790F78 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		C630F14C26B4365B00790F78 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				C630F13526B42CC100790F78 /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C630F13126B42CC000790F78 /* ViewController.swift in Sources */,
+				C630F13126B42CC000790F78 /* TabBarController.swift in Sources */,
+				C630F14526B4345300790F78 /* PersonListViewController.swift in Sources */,
+				C630F14326B42E9B00790F78 /* DataManager.swift in Sources */,
+				C630F14E26B44D3000790F78 /* PersonInfoViewController.swift in Sources */,
 				C630F12D26B42CC000790F78 /* AppDelegate.swift in Sources */,
+				C630F14126B42CDE00790F78 /* Person.swift in Sources */,
+				C630F14726B434F100790F78 /* ContactListViewController.swift in Sources */,
 				C630F12F26B42CC000790F78 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QL6TNF9LL;
-				INFOPLIST_FILE = ListApp/Info.plist;
+				INFOPLIST_FILE = ListApp/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QL6TNF9LL;
-				INFOPLIST_FILE = ListApp/Info.plist;
+				INFOPLIST_FILE = ListApp/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
