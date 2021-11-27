@@ -10,6 +10,7 @@ import UIKit
 class ContactListViewController: UITableViewController {
 
     var persons: [Person]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let tabBarVC = self.tabBarController as? TabBarController else { return }

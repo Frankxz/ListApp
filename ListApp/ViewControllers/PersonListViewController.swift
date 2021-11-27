@@ -15,6 +15,7 @@ class PersonListViewController: UITableViewController {
         super.viewDidLoad()
         guard let tabBarVC = self.tabBarController as? TabBarController else { return }
         persons = tabBarVC.persons
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

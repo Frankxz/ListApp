@@ -16,6 +16,7 @@ struct Person {
     var fullname: String {
         "\(name) \(surname)"
     }
+    
 }
 enum Contacts: String {
     case phone = "phone"

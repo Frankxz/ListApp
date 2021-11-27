@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UBe-G5-Dex">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MPH-aY-hco">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Persons List-->
+        <!--Contacts  List-->
         <scene sceneID="Qwc-u4-Lc1">
             <objects>
                 <tableViewController id="SYe-rw-oSj" customClass="PersonListViewController" customModule="ListApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,11 +35,12 @@
                             <outlet property="delegate" destination="SYe-rw-oSj" id="qrQ-GD-dud"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Persons List" id="DTW-HW-fjv"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.3" catalog="system" id="xmS-lv-xf4"/>
+                    <navigationItem key="navigationItem" title="Contacts  List" id="DTW-HW-fjv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Mf-Mx-Vcq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407.2463768115942" y="92.410714285714278"/>
+            <point key="canvasLocation" x="472" y="92"/>
         </scene>
         <!--Person Info View Controller-->
         <scene sceneID="1rN-1d-pkK">
@@ -52,7 +53,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfr-x6-N9N">
                                 <rect key="frame" x="10" y="215" width="394" height="166"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FullName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEm-0P-Vmd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FullName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEm-0P-Vmd">
                                         <rect key="frame" x="20" y="16" width="354" height="31.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         <nil key="textColor"/>
@@ -61,13 +62,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFF-8t-KZo">
                                         <rect key="frame" x="16" y="69.5" width="362" height="70"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNw-9S-dTr">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNw-9S-dTr">
                                                 <rect key="frame" x="0.0" y="0.0" width="362" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-jP-EWu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-jP-EWu">
                                                 <rect key="frame" x="0.0" y="43.5" width="362" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
@@ -76,7 +77,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="SFF-8t-KZo" firstAttribute="leading" secondItem="Vfr-x6-N9N" secondAttribute="leading" constant="16" id="12T-Bi-xqz"/>
                                     <constraint firstAttribute="trailing" secondItem="jEm-0P-Vmd" secondAttribute="trailing" constant="20" id="BQA-tr-dox"/>
@@ -107,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhd-7c-0NM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215.9420289855075" y="91.071428571428569"/>
+            <point key="canvasLocation" x="1281" y="90"/>
         </scene>
         <!--Contacts List-->
         <scene sceneID="yQb-eT-wV8">
@@ -132,59 +133,49 @@
                             <outlet property="delegate" destination="HKL-TK-JYK" id="eii-Qp-rFv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Contacts List" id="xHh-OO-56w"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info.circle" catalog="system" id="I7N-bV-2Z2"/>
+                    <navigationItem key="navigationItem" title="Contacts List" largeTitleDisplayMode="never" id="xHh-OO-56w"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdd-aw-89i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="817"/>
-        </scene>
-        <!--Contacts-->
-        <scene sceneID="PSY-AL-hJq">
-            <objects>
-                <navigationController id="qPB-es-wGc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="txt-h4-tYw"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xIS-9K-ERq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="HKL-TK-JYK" kind="relationship" relationship="rootViewController" id="lNm-Uq-yvB"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v72-SS-i6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-393" y="817"/>
+            <point key="canvasLocation" x="-394" y="819"/>
         </scene>
         <!--Persons-->
         <scene sceneID="61z-lH-91w">
             <objects>
                 <navigationController id="MPH-aY-hco" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Persons" image="person.3" catalog="system" id="PzA-fy-GN1"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="hKh-j0-evg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hKh-j0-evg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="20"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="SYe-rw-oSj" kind="relationship" relationship="rootViewController" id="DLi-NM-6uh"/>
+                        <segue destination="UBe-G5-Dex" kind="relationship" relationship="rootViewController" id="mkH-tM-gpX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rip-mF-Wb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="515.94202898550725" y="91.741071428571431"/>
+            <point key="canvasLocation" x="-1130" y="92"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tGe-PT-A8G">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UBe-G5-Dex" customClass="TabBarController" customModule="ListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="UBe-G5-Dex" customClass="TabBarController" customModule="ListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="JkT-qR-SW1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7ML-yz-ILF">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="MPH-aY-hco" kind="relationship" relationship="viewControllers" id="pwd-Mc-cJ0"/>
-                        <segue destination="qPB-es-wGc" kind="relationship" relationship="viewControllers" id="VzV-gC-iPe"/>
+                        <segue destination="SYe-rw-oSj" kind="relationship" relationship="viewControllers" id="7gW-Vy-BJx"/>
+                        <segue destination="HKL-TK-JYK" kind="relationship" relationship="viewControllers" id="ym8-QT-cC7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYl-wx-Vj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -193,13 +184,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
