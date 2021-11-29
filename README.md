@@ -3,7 +3,7 @@
 
 **Training app** 
 
-Simple contacts list app, contacts. \
+Simple contacts list app. \
 Written simple logic for configuring random unique contacts. \
 Practice with UITabBarController, UITableViewController.
 ## Screenshots
